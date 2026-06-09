@@ -1,0 +1,51 @@
+# Build outputs
+**/out/
+**/build-artifacts/
+**/build-cmake-check/
+**/build-cmake-check2/
+desktop-apps/package/build/
+desktop-apps/package/inno/*.exe
+desktop-apps/package/inno/package.config
+desktop-apps/common/loginpage/deploy/
+core/build/
+core/**/core_build/
+core/Common/3dParty/cef/*/build/
+core/Common/3dParty/v8_89/v8/out.gn/
+core/Common/3dParty/v8_89/v8/third_party_new/
+sdkjs/build/maps/
+
+# Generated binaries and debug data
+*.log
+*.tmp
+*.pdb
+*.ilk
+*.obj
+*.pch
+*.idb
+*.lastbuildstate
+*.tlog
+*.exp
+*.ipdb
+*.iobj
+*.ninja_log
+*.ninja_deps
+
+# Package artifacts
+*.msi
+*.appx
+*.msix
+*.zip
+*.7z
+*.part.*
+
+# JavaScript/Python local dependencies
+**/node_modules/
+**/__pycache__/
+*.pyc
+
+# IDE and OS files
+.vs/
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini

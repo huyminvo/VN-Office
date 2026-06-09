@@ -1,0 +1,19 @@
+{
+  "company_name": "VN Office",
+  "publisher_name": "HuyMin",
+  "publisher_url": "https://github.com/huyminvo/VN-Office",
+  "publisher_address": "",
+  "publisher_phone": "",
+  "sales_email": "",
+  "support_email": "",
+  "support_url": " https://github.com/huyminvo/VN-Office",
+  "help_url": " https://github.com/huyminvo/VN-Office",
+  "app_title": "VN Office",
+  "attribution": "VN Office by HuyMin",
+  "mobile_logo_light": "eo_logo_light.svg",
+  "mobile_logo_dark": "eo_logo_dark.svg",
+  "about_logo_light": "logo.svg",
+  "about_logo_dark": "logo.svg",
+  "forms_logo_light": "eo_logo_dark.svg",
+  "forms_logo_dark": "eo_logo_light.svg"
+}

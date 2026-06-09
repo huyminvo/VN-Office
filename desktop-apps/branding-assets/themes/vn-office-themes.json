@@ -1,0 +1,64 @@
+{
+  "product": "VN Office",
+  "version": 1,
+  "themeModes": ["light", "dark", "system"],
+  "moduleLabels": {
+    "writer": "Word",
+    "calc": "Excel",
+    "impress": "PowerPoint",
+    "draw": "Diagrams",
+    "base": "Access",
+    "math": "Formula"
+  },
+  "tokens": {
+    "light": {
+      "name": "VN Tech Light",
+      "mode": "light",
+      "surface": "#F7FAFC",
+      "surfaceElevated": "#FFFFFF",
+      "surfaceChrome": "#EEF3F7",
+      "text": "#17202C",
+      "textMuted": "#5A6678",
+      "border": "#D7E0EA",
+      "accent": "#DA251D",
+      "accentAlt": "#FFCD00",
+      "accentTech": "#00A3FF",
+      "selection": "#CFEFFF",
+      "selectionText": "#06111F",
+      "toolbar": "#F1F6FA",
+      "toolbarHover": "#E6F3FF",
+      "documentCanvas": "#FFFFFF"
+    },
+    "dark": {
+      "name": "VN Tech Dark",
+      "mode": "dark",
+      "surface": "#090D14",
+      "surfaceElevated": "#111827",
+      "surfaceChrome": "#151E2D",
+      "text": "#EEF6FF",
+      "textMuted": "#9BA8BA",
+      "border": "#263348",
+      "accent": "#FF453A",
+      "accentAlt": "#FFD54A",
+      "accentTech": "#00D5FF",
+      "selection": "#123A54",
+      "selectionText": "#F5FBFF",
+      "toolbar": "#101827",
+      "toolbarHover": "#18263B",
+      "documentCanvas": "#0F1622"
+    },
+    "system": {
+      "name": "VN Tech System",
+      "mode": "system",
+      "strategy": "Use OS light/dark preference when available; otherwise fall back to light.",
+      "lightFallback": "light",
+      "darkFallback": "dark",
+      "previewSurface": "#1E2735",
+      "previewSurfaceElevated": "#EBF1F7",
+      "previewPanel": "#FFFFFF",
+      "previewText": "#17202C",
+      "previewTextMuted": "#536071",
+      "previewAccent": "#FF453A"
+    }
+  }
+}
