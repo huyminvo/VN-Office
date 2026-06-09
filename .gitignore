@@ -44,6 +44,7 @@ sdkjs/build/maps/
 *.pyc
 
 # IDE and OS files
+.tools/
 .vs/
 .vscode/
 .idea/
