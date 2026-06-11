@@ -1,3 +1,3 @@
 ## Core fonts
 
-This repo contains fonts used in [VN Office Document Server](https://github.com/huymin222/VN-Office).
+This repo contains fonts used in [VN Office Document Server](https://github.com/huyminvo/VN-Office).

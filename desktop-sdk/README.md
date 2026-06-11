@@ -3,4 +3,4 @@
 ## Desktop SDK
 SDK which is a core part of [Desktop Editors][1].
 
-  [1]: https://github.com/huymin222/VN-Office
+  [1]: https://github.com/huyminvo/VN-Office

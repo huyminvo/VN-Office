@@ -130,8 +130,7 @@ foreach ($p in @(
   "Euro-Office",
   "Euro Office",
   "EuroOffice",
-  "github.com/euro-office",
-  "github.com/Euro-Office",
+  "old Euro Office GitHub URL",
   "templates.onlyoffice.com",
   "download.onlyoffice.com/install/desktop/editors/windows/onlyoffice",
   "ASC.Documents.5"

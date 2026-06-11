@@ -27,4 +27,4 @@ The directory layout below helps developers quickly navigate and understand SDKJ
 
 ## 📜 License
 
-**SDKJS** is licensed under the **GNU Affero General Public License (AGPL) v3.0**. For full details, refer to the [LICENSE](https://github.com/huymin222/VN-Office/blob/main/LICENSE) file.
+**SDKJS** is licensed under the **GNU Affero General Public License (AGPL) v3.0**. For full details, refer to the [LICENSE](https://github.com/huyminvo/VN-Office/blob/main/LICENSE) file.
