@@ -66,12 +66,15 @@ Write-Host "MOVE: $BuildDir\desktop\editors\web-apps\apps\*\main\resources\help\
 Get-ChildItem -Directory `
     -Path "$BuildDir\desktop\editors\web-apps\apps\*\main\resources\help" `
     | ForEach-Object {
-        $src = $_.FullName | Resolve-Path -Relative
-        $dst = $src.Replace("$BuildDir\desktop", "$BuildDir\help")
+        $src = $_.FullName
+        $desktopRoot = (Resolve-Path "$BuildDir\desktop").Path
+        $helpRoot = Join-Path (Resolve-Path "$BuildDir").Path "help"
+        $relative = $src.Substring($desktopRoot.Length).TrimStart('\')
+        $dst = Join-Path $helpRoot $relative
 
         Write-Host "MOVE: $src > $dst"
-        New-Item -ItemType Directory -Force -Path "$dst\.." | Out-Null
-        Move-Item -Path "$src" -Destination "$dst"
+        New-Item -ItemType Directory -Force -Path (Split-Path -Parent $dst) | Out-Null
+        Move-Item -Path $src -Destination $dst
     }
 
 # "$BuildDir\desktop: {0:0.00} MB" -f ((Get-ChildItem -Recurse `
