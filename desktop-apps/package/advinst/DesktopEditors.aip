@@ -35,10 +35,10 @@
     <ROW Property="MismatchInstalledType_ErrorText" Value="The installed version was deployed using a different type of installer. Please install the correct package or uninstall the existing version before continuing." ValueLocId="*"/>
     <ROW Property="MsiLogging" MultiBuildValue="MsiBuild64:vp#MsiBuild32:vp#MsiBuildARM64:vp"/>
     <ROW Property="NOASSOCHECK" Value="0" ValueLocId="-"/>
-    <ROW Property="NewDocument" Value="New document"/>
-    <ROW Property="NewForm" Value="New PDF Form"/>
-    <ROW Property="NewPresentation" Value="New presentation"/>
-    <ROW Property="NewSpreadsheet" Value="New spreadsheet"/>
+    <ROW Property="NewDocument" Value="VN Word"/>
+    <ROW Property="NewForm" Value="VN PDF Tool"/>
+    <ROW Property="NewPresentation" Value="VN PowerPoint"/>
+    <ROW Property="NewSpreadsheet" Value="VN Excel"/>
     <ROW Property="PLUGINS" Value="1" ValueLocId="-"/>
     <ROW Property="PackageFileName" Value="[|CompanyPath]-[|DesktopPath]" ValueLocId="-"/>
     <ROW Property="PackageName" Value="VN Office Desktop Editors" ValueLocId="-"/>

@@ -2144,8 +2144,8 @@ ur.extVSDX =ویزیو ڈرائنگ
 #endif
 ;======================================================================================================
 
-en.jumpDOCX =New document
-en_GB.jumpDOCX =New document
+en.jumpDOCX =VN Word
+en_GB.jumpDOCX =VN Word
 ar_SA.jumpDOCX =مستند جديد
 bg.jumpDOCX =Нов документ
 ca.jumpDOCX =Nou document
@@ -2170,7 +2170,7 @@ sk.jumpDOCX =Nový dokument
 sl.jumpDOCX =Nov dokument
 sv.jumpDOCX =Nytt dokument
 tr.jumpDOCX =Yeni Belge
-vi.jumpDOCX =Tài liệu mới
+vi.jumpDOCX =VN Word
 zh_CN.jumpDOCX =新建文档
 hy_AM.jumpDOCX =Նոր փաստաթուղթ
 ;hr.jumpDOCX =Novi dokument
@@ -2195,8 +2195,8 @@ sq.jumpDOCX =Dokument i ri
 ur.jumpDOCX =نئی دستاویز
 #endif
 
-en.jumpXLSX =New spreadsheet
-en_GB.jumpXLSX =New spreadsheet
+en.jumpXLSX =VN Excel
+en_GB.jumpXLSX =VN Excel
 ar_SA.jumpXLSX =جدول بياني جديد
 bg.jumpXLSX =Нова електронна таблица
 ca.jumpXLSX =Nou full de càlcul
@@ -2221,7 +2221,7 @@ sk.jumpXLSX =Nová tabuľka
 sl.jumpXLSX =Nova razpredelnica
 sv.jumpXLSX =Nytt kalkylblad
 tr.jumpXLSX =Yeni Hesap Tablosu
-vi.jumpXLSX =Bảng tính mới
+vi.jumpXLSX =VN Excel
 zh_CN.jumpXLSX =新建表格
 hy_AM.jumpXLSX =Նոր աղյուսակաթերթ
 ;hr.jumpXLSX =Nova proračunska tablica
@@ -2246,8 +2246,8 @@ sq.jumpXLSX =Fletëllogaritëse e re
 ur.jumpXLSX =نئی اسپریڈشیٹ
 #endif
 
-en.jumpPPTX =New presentation
-en_GB.jumpPPTX =New presentation
+en.jumpPPTX =VN PowerPoint
+en_GB.jumpPPTX =VN PowerPoint
 ar_SA.jumpPPTX =عرض تقديمي جديد
 bg.jumpPPTX =Нова презентация
 ca.jumpPPTX =Nova presentació
@@ -2272,7 +2272,7 @@ sk.jumpPPTX =Nová prezentácia
 sl.jumpPPTX =Nova predstavitev
 sv.jumpPPTX =Ny presentation
 tr.jumpPPTX =Yeni Sunum
-vi.jumpPPTX =Bản trình chiếu mới
+vi.jumpPPTX =VN PowerPoint
 zh_CN.jumpPPTX =新建幻灯片
 hy_AM.jumpPPTX =Նոր ներկայացում
 ;hr.jumpPPTX =Nova prezentacija
@@ -2297,8 +2297,8 @@ sq.jumpPPTX =Prezantim i ri
 ur.jumpPPTX =نئی پیشکش
 #endif
 
-en.jumpDOCXF =New PDF
-en_GB.jumpDOCXF =New PDF
+en.jumpDOCXF =VN PDF Tool
+en_GB.jumpDOCXF =VN PDF Tool
 ar_SA.jumpDOCXF =PDF جديد
 bg.jumpDOCXF =Нов PDF
 ca.jumpDOCXF =Nou PDF
@@ -2323,7 +2323,7 @@ sk.jumpDOCXF =Nový PDF
 sl.jumpDOCXF =Novi PDF
 sv.jumpDOCXF =Nytt PDF
 tr.jumpDOCXF =Yeni PDF
-vi.jumpDOCXF =PDF mới
+vi.jumpDOCXF =VN PDF Tool
 zh_CN.jumpDOCXF =新建 PDF
 hy_AM.jumpDOCXF =Նոր PDF
 ;hr.jumpDOCXF =Novi PDF

@@ -307,7 +307,7 @@
     <STRING lang="zh_TW" value="The installed version was deployed using a different type of installer. Please install the correct package or uninstall the existing version before continuing."/>
   </ENTRY>
   <ENTRY id="Property.NewDocument">
-    <STRING lang="en" value="New document"/>
+    <STRING lang="en" value="VN Word"/>
     <STRING lang="ar" value="مستند جديد"/>
     <STRING lang="be" value="Новы дакумент"/>
     <STRING lang="bg" value="Нов документ"/>
@@ -316,7 +316,7 @@
     <STRING lang="da" value="Nyt dokument"/>
     <STRING lang="de" value="Neues Dokument"/>
     <STRING lang="el" value="Νέο έγγραφο"/>
-    <STRING lang="en_GB" value="New document"/>
+    <STRING lang="en_GB" value="VN Word"/>
     <STRING lang="es" value="Nuevo Documento"/>
     <STRING lang="fi" value="Uusi asiakirja"/>
     <STRING lang="fr" value="Nouveau document"/>
@@ -344,12 +344,12 @@
     <STRING lang="tr" value="Yeni Belge"/>
     <STRING lang="uk" value="Новий документ"/>
     <STRING lang="ur" value="نئی دستاویز"/>
-    <STRING lang="vi" value="Tài liệu mới"/>
+    <STRING lang="vi" value="VN Word"/>
     <STRING lang="zh" value="新建文档"/>
     <STRING lang="zh_TW" value="新文件"/>
   </ENTRY>
   <ENTRY id="Property.NewForm">
-    <STRING lang="en" value="New PDF"/>
+    <STRING lang="en" value="VN PDF Tool"/>
     <STRING lang="ar" value="PDF جديد"/>
     <STRING lang="be" value="Новы PDF"/>
     <STRING lang="bg" value="Нов PDF формуляр"/>
@@ -358,7 +358,7 @@
     <STRING lang="da" value="Ny PDF"/>
     <STRING lang="de" value="Neues PDF"/>
     <STRING lang="el" value="Νέο PDF"/>
-    <STRING lang="en_GB" value="New PDF"/>
+    <STRING lang="en_GB" value="VN PDF Tool"/>
     <STRING lang="es" value="Nuevo PDF"/>
     <STRING lang="fi" value="Uusi PDF"/>
     <STRING lang="fr" value="Nouveau PDF"/>
@@ -386,12 +386,12 @@
     <STRING lang="tr" value="Yeni PDF"/>
     <STRING lang="uk" value="Нова PDF"/>
     <STRING lang="ur" value="نیا پی ڈی ایف"/>
-    <STRING lang="vi" value="PDF mới"/>
+    <STRING lang="vi" value="VN PDF Tool"/>
     <STRING lang="zh" value="新建 PDF"/>
     <STRING lang="zh_TW" value="新的 PDF"/>
   </ENTRY>
   <ENTRY id="Property.NewPresentation">
-    <STRING lang="en" value="New presentation"/>
+    <STRING lang="en" value="VN PowerPoint"/>
     <STRING lang="ar" value="عرض تقديمي جديد"/>
     <STRING lang="be" value="Новая прэзентацыя"/>
     <STRING lang="bg" value="Нова презентация"/>
@@ -400,7 +400,7 @@
     <STRING lang="da" value="Ny præsentation"/>
     <STRING lang="de" value="Neue Präsentation"/>
     <STRING lang="el" value="Νέα παρουσίαση"/>
-    <STRING lang="en_GB" value="New presentation"/>
+    <STRING lang="en_GB" value="VN PowerPoint"/>
     <STRING lang="es" value="Nueva Presentación"/>
     <STRING lang="fi" value="Uusi esitys"/>
     <STRING lang="fr" value="Nouvelle présentation"/>
@@ -428,12 +428,12 @@
     <STRING lang="tr" value="Yeni Sunum"/>
     <STRING lang="uk" value="Нова презентація"/>
     <STRING lang="ur" value="نئی پیشکش"/>
-    <STRING lang="vi" value="Bản trình chiếu mới"/>
+    <STRING lang="vi" value="VN PowerPoint"/>
     <STRING lang="zh" value="新建幻灯片"/>
     <STRING lang="zh_TW" value="新簡報"/>
   </ENTRY>
   <ENTRY id="Property.NewSpreadsheet">
-    <STRING lang="en" value="New spreadsheet"/>
+    <STRING lang="en" value="VN Excel"/>
     <STRING lang="ar" value="جدول بياني جديد"/>
     <STRING lang="be" value="Новая электронная табліца"/>
     <STRING lang="bg" value="Нова електронна таблица"/>
@@ -442,7 +442,7 @@
     <STRING lang="da" value="Nyt regneark"/>
     <STRING lang="de" value="Neue Tabelle"/>
     <STRING lang="el" value="Νέο λογιστικό φύλλο"/>
-    <STRING lang="en_GB" value="New spreadsheet"/>
+    <STRING lang="en_GB" value="VN Excel"/>
     <STRING lang="es" value="Nueva Hoja de Cálculo"/>
     <STRING lang="fi" value="Uusi laskentataulukko"/>
     <STRING lang="fr" value="Nouvelle feuille de calcul"/>
@@ -470,7 +470,7 @@
     <STRING lang="tr" value="Yeni Hesap Tablosu"/>
     <STRING lang="uk" value="Нова таблиця"/>
     <STRING lang="ur" value="نئی اسپریڈشیٹ"/>
-    <STRING lang="vi" value="Bảng tính mới"/>
+    <STRING lang="vi" value="VN Excel"/>
     <STRING lang="zh" value="新建表格"/>
     <STRING lang="zh_TW" value="新試算表"/>
   </ENTRY>

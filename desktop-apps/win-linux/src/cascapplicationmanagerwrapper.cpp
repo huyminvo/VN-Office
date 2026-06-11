@@ -2364,16 +2364,16 @@ QString CAscApplicationManagerWrapper::newFileName(int format)
 
     switch ( format ) {
     case AVS_OFFICESTUDIO_FILE_DOCUMENT_DOTX:
-    case AVS_OFFICESTUDIO_FILE_DOCUMENT_DOCX:        return tr("Document%1.docx").arg(++docx_count);
+    case AVS_OFFICESTUDIO_FILE_DOCUMENT_DOCX:        return tr("VN Word %1.docx").arg(++docx_count);
     case AVS_OFFICESTUDIO_FILE_DOCUMENT_OFORM_PDF:
     case AVS_OFFICESTUDIO_FILE_DOCUMENT_DOCXF: {
-        QString docname = tr("Document%1.docx").arg(++pdf_count);
+        QString docname = tr("VN PDF Tool %1.docx").arg(++pdf_count);
         return docname.replace("docx", "pdf");
     }
     case AVS_OFFICESTUDIO_FILE_SPREADSHEET_XLTX:
-    case AVS_OFFICESTUDIO_FILE_SPREADSHEET_XLSX:     return tr("Book%1.xlsx").arg(++xlsx_count);
+    case AVS_OFFICESTUDIO_FILE_SPREADSHEET_XLSX:     return tr("VN Excel %1.xlsx").arg(++xlsx_count);
     case AVS_OFFICESTUDIO_FILE_PRESENTATION_POTX:
-    case AVS_OFFICESTUDIO_FILE_PRESENTATION_PPTX:    return tr("Presentation%1.pptx").arg(++pptx_count);
+    case AVS_OFFICESTUDIO_FILE_PRESENTATION_PPTX:    return tr("VN PowerPoint %1.pptx").arg(++pptx_count);
     default:                                         return "Document.asc";
     }
 }

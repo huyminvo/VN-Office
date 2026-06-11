@@ -11,14 +11,14 @@ BEGIN
     IDS_PPTX  "Office Open XML Presentation"
     IDS_PDF   "PDF"
 
-    IDS_NEW_DOCX  "New Office Open XML Document"
-    IDS_NEW_XLSX  "New Office Open XML Spreadsheet"
-    IDS_NEW_PPTX  "New Office Open XML Presentation"
-    IDS_NEW_PDF   "New PDF"
+    IDS_NEW_DOCX  "VN Word"
+    IDS_NEW_XLSX  "VN Excel"
+    IDS_NEW_PPTX  "VN PowerPoint"
+    IDS_NEW_PDF   "VN PDF Tool"
 
-    IDS_JUMP_DOCX  "New document"
-    IDS_JUMP_XLSX  "New spreadsheet"
-    IDS_JUMP_PPTX  "New presentation"
+    IDS_JUMP_DOCX  "VN Word"
+    IDS_JUMP_XLSX  "VN Excel"
+    IDS_JUMP_PPTX  "VN PowerPoint"
 END
 
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
@@ -29,14 +29,14 @@ BEGIN
     IDS_PPTX  "Office Open XML Presentation"
     IDS_PDF   "PDF"
 
-    IDS_NEW_DOCX  "New Office Open XML Document"
-    IDS_NEW_XLSX  "New Office Open XML Spreadsheet"
-    IDS_NEW_PPTX  "New Office Open XML Presentation"
-    IDS_NEW_PDF   "New PDF"
+    IDS_NEW_DOCX  "VN Word"
+    IDS_NEW_XLSX  "VN Excel"
+    IDS_NEW_PPTX  "VN PowerPoint"
+    IDS_NEW_PDF   "VN PDF Tool"
 
-    IDS_JUMP_DOCX  "New document"
-    IDS_JUMP_XLSX  "New spreadsheet"
-    IDS_JUMP_PPTX  "New presentation"
+    IDS_JUMP_DOCX  "VN Word"
+    IDS_JUMP_XLSX  "VN Excel"
+    IDS_JUMP_PPTX  "VN PowerPoint"
 END
 
 LANGUAGE LANG_ARABIC, SUBLANG_ARABIC_SAUDI_ARABIA
@@ -443,14 +443,14 @@ BEGIN
     IDS_PPTX  "Bản trình bày Office Open XML"
     IDS_PDF   "PDF"
 
-    IDS_NEW_DOCX  "Tài liệu Office Open XML mới"
-    IDS_NEW_XLSX  "Bảng tính Office Open XML mới"
-    IDS_NEW_PPTX  "Bản trình bày Office Open XML mới"
-    IDS_NEW_PDF   "PDF mới"
+    IDS_NEW_DOCX  "VN Word"
+    IDS_NEW_XLSX  "VN Excel"
+    IDS_NEW_PPTX  "VN PowerPoint"
+    IDS_NEW_PDF   "VN PDF Tool"
 
-    IDS_JUMP_DOCX  "Tài liệu mới"
-    IDS_JUMP_XLSX  "Bảng tính mới"
-    IDS_JUMP_PPTX  "Bản trình chiếu mới"
+    IDS_JUMP_DOCX  "VN Word"
+    IDS_JUMP_XLSX  "VN Excel"
+    IDS_JUMP_PPTX  "VN PowerPoint"
 END
 
 LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
