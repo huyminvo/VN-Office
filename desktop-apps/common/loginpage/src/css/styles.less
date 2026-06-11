@@ -2684,6 +2684,80 @@ li.menu-item {
             }
 }
 
+.tool-menu .menu-item--donate {
+  margin-top: auto;
+
+  .icon-box--donate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #f7c948 0%, #ea9f1a 100%);
+    border-color: #d48b0c;
+  }
+
+  .icon-text {
+    color: #1b1b1b;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+  }
+}
+
+#area-welcome .js-show-donate {
+  font-weight: 600;
+}
+
+.dlg.dlg-donate {
+  border: 0;
+  border-radius: 12px;
+  padding: 0;
+  width: 560px;
+  max-width: calc(100vw - 32px);
+  background: @background-normal;
+  color: @text-normal;
+
+  &::backdrop {
+    background: rgba(0, 0, 0, 0.32);
+  }
+
+  .body {
+    padding: 20px 24px 24px;
+  }
+}
+
+.donate-dialog {
+  text-align: left;
+
+  h3 {
+    margin: 0 0 12px;
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  p {
+    margin: 0 0 12px;
+  }
+
+  .donate-dialog__actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin: 20px 0 12px;
+  }
+
+  .donate-dialog__note {
+    color: @text-secondary;
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .donate-dialog__repo {
+    display: inline-flex;
+    align-items: center;
+    min-height: 42px;
+  }
+}
+
 #idx-sidebar-portals {
   overflow: hidden;
   display: flex;

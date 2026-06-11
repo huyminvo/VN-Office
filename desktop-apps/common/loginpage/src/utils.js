@@ -211,8 +211,10 @@ utils.defines.FileFormat = {
 
 utils.defines.DBLCLICK_LOCK_TIMEOUT = 800;
 utils.defines.links = {
-    regnew: 'https://www.onlyoffice.com/registration.aspx?app=desktop',
-    restorepass: 'https://www.onlyoffice.com/signin.aspx'
+    regnew: 'https://github.com/huyminvo/VN-Office',
+    restorepass: 'https://github.com/huyminvo/VN-Office',
+    helpcenter: 'https://github.com/huyminvo/VN-Office',
+    donate: 'https://www.paypal.com/ncp/payment/7S7Q9QY6S8YAJ'
 };
 
 utils.formatToEditor = function(f) {

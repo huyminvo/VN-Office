@@ -71,6 +71,7 @@ protected:
     virtual void onMinimizeEvent();
     virtual void onMaximizeEvent();
     virtual void onCloseEvent();
+    virtual void onDonateEvent();
     virtual void focus();
 
     QVector<CPushButton*> m_pTopButtons;
@@ -78,6 +79,7 @@ protected:
     QWidget       *m_pMainPanel = nullptr,
                   *m_boxTitleBtns = nullptr,
                   *m_pMainView = nullptr;
+    CPushButton   *m_pDonateButton = nullptr;
     double         m_dpiRatio;
     QColor         m_brdColor,
                    m_bkgColor;

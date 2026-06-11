@@ -33,12 +33,14 @@
 
 
 		//language=HTML
-        const helpLink = `<a l10n class="link" href="https://helpcenter.onlyoffice.com/" target="popup">${_lang.textHelpCenter}</a>`;
+        const helpLink = `<a l10n class="link" href="${utils.defines.links.helpcenter}" target="popup">${_lang.textHelpCenter}</a>`;
+        const donateLink = `<a l10n class="link js-show-donate" href="javascript:void(0)">${_lang.textDonate}</a>`;
 		const welcomeBannerTemplate = !localStorage.getItem('welcome') ? `
             <div id="area-welcome">
                 <h2 l10n>${_lang.welWelcome}</h2>
                 <p l10n class="text-normal">${_lang.welDescr}</p>
                 <p l10n class="text-normal">${_lang.welNeedHelp.replace('$1', helpLink)}</p>
+                <p l10n class="text-normal">${_lang.welSupport.replace('$1', donateLink)}</p>
             </div>` : '';
 
         //language=HTML
@@ -98,6 +100,13 @@
             if (!localStorage.getItem('welcome')) {
                 localStorage.setItem('welcome', '0');
             }
+
+            this.$panel.on('click', '.js-show-donate', function(e) {
+                e.preventDefault();
+                if (window.openDonateDialog) {
+                    window.openDonateDialog();
+                }
+            });
 
             this.$boxRecovery = this.$panel.find('#box-recovery');
             this.$boxRecent = this.$panel.find('#box-recent');

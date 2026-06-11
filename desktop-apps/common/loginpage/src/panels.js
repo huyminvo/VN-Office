@@ -44,6 +44,14 @@ $(document).ready(function() {
               <section id="idx-sidebar-portals" class="connect">
               </section>
               <li class="menu-item devider"></li>
+              <li class="menu-item menu-item--donate">
+                  <a action="donate">
+                    <div class="icon-box icon-box--donate">
+                      <span class="icon-text" aria-hidden="true">$</span>
+                    </div>
+                    <span class="text" l10n>${utils.Lang.actDonate}</span>
+                  </a>
+              </li>
               <li class="menu-item">
                   <a action="settings">
                     <div class="icon-box">
@@ -181,6 +189,12 @@ function onActionClick(e) {
     {
         openFile(OPEN_FILE_FOLDER, '');
     } else {
+        if (action === 'donate') {
+            if (window.openDonateDialog) {
+                window.openDonateDialog();
+            }
+            return;
+        }
         if (action === 'about') {
             return CommonEvents.fire('panel:show', [action]);
         }
@@ -201,6 +215,12 @@ function onActionClick(e) {
 function selectAction(action) {
     if ( !$(`.action-panel.${action}`).length ) return;
 
+    if (action === 'donate') {
+        if (window.openDonateDialog) {
+            window.openDonateDialog();
+        }
+        return;
+    }
     if (action === 'about') {
             return CommonEvents.fire('panel:show', [action]);
     }

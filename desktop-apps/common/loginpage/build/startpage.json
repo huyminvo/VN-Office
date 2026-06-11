@@ -75,6 +75,7 @@
                     ,"../src/dnd-file-zone.js"
                     ,"../src/document-creation-grid.js"
                     ,"../src/dialogbase.js"
+                    ,"../src/dialogdonate.js"
                     ,"../deploy/noconnect.js"
                     ,"../src/paneltemplates.js"
                     ,"../src/panelrecent.js"

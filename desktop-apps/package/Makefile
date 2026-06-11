@@ -1,16 +1,16 @@
 PWD := $(shell pwd)
 
-COMPANY_NAME ?= Euro-Office
+COMPANY_NAME ?= VN Office
 PRODUCT_NAME ?= Desktop Editors
 PRODUCT_NAME_SHORT ?= $(subst $(empty) $(empty),,$(PRODUCT_NAME))
 
 COMPANY_NAME_LOW = $(shell echo $(COMPANY_NAME) | tr A-Z a-z | tr -s ' ' '-')
 PRODUCT_NAME_LOW = $(shell echo $(PRODUCT_NAME_SHORT) | tr A-Z a-z)
 
-PUBLISHER_NAME ?= Ascensio System SIA
-PUBLISHER_URL ?= http://onlyoffice.com
-SUPPORT_URL ?= http://support.onlyoffice.com
-SUPPORT_MAIL ?= support@onlyoffice.com
+PUBLISHER_NAME ?= HuyMin
+PUBLISHER_URL ?= https://github.com/huyminvo/VN-Office
+SUPPORT_URL ?= https://github.com/huyminvo/VN-Office
+SUPPORT_MAIL ?= nvminhhuy2202@gmail.com
 SCHEME_HANDLER ?= oo-office
 
 PRODUCT_VERSION ?= 0.0.0

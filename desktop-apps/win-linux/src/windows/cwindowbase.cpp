@@ -17,6 +17,7 @@
 #endif
 #include <QApplication>
 #include <QHBoxLayout>
+#include <QMessageBox>
 #include <QScreen>
 #include <functional>
 
@@ -155,6 +156,13 @@ QWidget* CWindowBase::createTopPanel(QWidget *parent)
     layoutBtns->setAlignment(Qt::AlignTop);
     _boxTitleBtns->setLayout(layoutBtns);
     if (isCustomWindowStyle()) {
+        m_pDonateButton = createToolButton(_boxTitleBtns, "toolButtonDonate");
+        m_pDonateButton->setText(QObject::tr("Donate"));
+        m_pDonateButton->setProperty("ToolTip", QObject::tr("Support HuyMin and VN Office"));
+        m_pDonateButton->setFixedSize(int(72 * m_dpiRatio), int(m_toolbtn_height * m_dpiRatio));
+        QObject::connect(m_pDonateButton, &QPushButton::clicked, [=]{onDonateEvent();});
+        layoutBtns->addWidget(m_pDonateButton);
+
         const QString names[3] = {"toolButtonMinimize", "toolButtonMaximize", "toolButtonClose"};
         std::function<void(void)> btn_methods[3] = {
             [=]{onMinimizeEvent();}, [=]{onMaximizeEvent();}, [=]{onCloseEvent();}};
@@ -232,6 +240,8 @@ void CWindowBase::setScreenScalingFactor(double factor, bool resize)
         if (isCustomWindowStyle()) {
             pLayoutBtns->setContentsMargins(0, 0, 0, 0);
             QSize small_btn_size(int(TITLEBTN_WIDTH*m_dpiRatio), int(m_toolbtn_height * m_dpiRatio));
+            if (m_pDonateButton)
+                m_pDonateButton->setFixedSize(int(72 * m_dpiRatio), int(m_toolbtn_height * m_dpiRatio));
             foreach (auto pBtn, m_pTopButtons)
                 pBtn->setFixedSize(small_btn_size);
         }
@@ -266,6 +276,26 @@ void CWindowBase::onMaximizeEvent()
 void CWindowBase::onCloseEvent()
 {
     deleteLater();
+}
+
+void CWindowBase::onDonateEvent()
+{
+    QMessageBox box(this);
+    box.setWindowTitle(QObject::tr("Support VN Office"));
+    box.setIcon(QMessageBox::Information);
+    box.setText(QObject::tr("Support HuyMin and help VN Office keep getting fixes, polished UI updates and new Windows releases."));
+    box.setInformativeText(QObject::tr("Choose Donate to open the PayPal support page, or Project Repository to view the GitHub project."));
+
+    QPushButton *donateButton = box.addButton(QObject::tr("Donate"), QMessageBox::AcceptRole);
+    QPushButton *repoButton = box.addButton(QObject::tr("Project Repository"), QMessageBox::ActionRole);
+    box.addButton(QMessageBox::Cancel);
+    box.exec();
+
+    if (box.clickedButton() == donateButton) {
+        Utils::openUrl("https://www.paypal.com/ncp/payment/7S7Q9QY6S8YAJ");
+    } else if (box.clickedButton() == repoButton) {
+        Utils::openUrl("https://github.com/huyminvo/VN-Office");
+    }
 }
 
 void CWindowBase::focus()
