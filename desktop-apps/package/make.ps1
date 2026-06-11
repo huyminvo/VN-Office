@@ -62,6 +62,46 @@ Copy-Item -Force -Recurse `
     -Path "$SourceDir\*" `
     -Destination "$BuildDir\desktop\"
 
+Write-Host "SYNC: converter runtime DLLs > $BuildDir\desktop\"
+Get-ChildItem -LiteralPath "$BuildDir\desktop\converter" -Filter *.dll -File -ErrorAction SilentlyContinue |
+    ForEach-Object {
+        $dst = Join-Path "$BuildDir\desktop" $_.Name
+        Write-Host "COPY: $($_.FullName) > $dst"
+        Copy-Item -Force -LiteralPath $_.FullName -Destination $dst
+    }
+
+Get-ChildItem -LiteralPath "$BuildDir\desktop\converter" -Filter icudtl*.dat -File -ErrorAction SilentlyContinue |
+    ForEach-Object {
+        $dst = Join-Path "$BuildDir\desktop" $_.Name
+        if (-not (Test-Path $dst)) {
+            Write-Host "COPY: $($_.FullName) > $dst"
+            Copy-Item -Force -LiteralPath $_.FullName -Destination $dst
+        }
+    }
+
+$sourceRoot = $SourceDir
+1..5 | ForEach-Object {
+    $sourceRoot = Split-Path -Parent $sourceRoot
+}
+
+$icuCandidates = switch ($Arch) {
+    "x64" {
+        @(
+            (Join-Path $sourceRoot "core\Common\3dParty\icu\icu\bin64\icuin74.dll"),
+            "$SourceDir\converter\icuin74.dll"
+        )
+    }
+    default { @() }
+}
+foreach ($extraIcu in $icuCandidates) {
+    if (Test-Path -LiteralPath $extraIcu -ErrorAction SilentlyContinue) {
+        $dst = Join-Path "$BuildDir\desktop" "icuin74.dll"
+        Write-Host "COPY: $extraIcu > $dst"
+        Copy-Item -Force -LiteralPath $extraIcu -Destination $dst
+        break
+    }
+}
+
 Write-Host "MOVE: $BuildDir\desktop\editors\web-apps\apps\*\main\resources\help\* > $BuildDir\help\"
 Get-ChildItem -Directory `
     -Path "$BuildDir\desktop\editors\web-apps\apps\*\main\resources\help" `
